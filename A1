@@ -1,0 +1,31 @@
+package acadgild1;
+
+public class A extends B{
+	public static void main(String[] args) {
+		A a=new A();
+		a.test();
+		B b=new B();
+		b.test();
+		C c=new C();
+		c.test();
+	}
+	void test(){
+		super.test();
+	System.out.println("class A test method");
+	}
+}
+class B extends C{
+	void test(){
+		System.out.println("Class B test method ");
+	}
+}
+class C {
+	void test(){
+		System.out.println("Class C test method ");
+	}
+}
+
+
+
+
+//option f. It is not possible to invoke test() method defined in C from a method in A.
